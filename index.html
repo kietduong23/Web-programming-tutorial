@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Tut1</title>
+      <meta charset="">
+
+      <title>Tut1</title>
     </head>
     <body>
+
         <h1>Group X</h1>
         <p>We are group X :D</p>
+
         <table border="1">
             <caption>Members</caption>
             <thead>
@@ -31,6 +35,67 @@
       <!-- create a totals row here using <tr> and <th> elements. We will cover rowspan and colspan in the tutes. -->        
             </tfooter>
           </table>
+
+          <h2>Contact us</h2>
+
+          <form onsubmit="return false">
+            <div>
+              <label for="purpose">Purpose of Contact: </label>
+              <select name='santas-list', id="purpose">
+                <option selected>Business</option>
+                <option>Personal</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="name">Name: </label>
+              <input required type="text", id="name", name="name", maxlength="50">
+            </div>
+            
+            <div>
+              <label for="email">Email</label>
+              <input required type="email", id="email", name="email">
+            </div>
+            
+            <div>
+              <label for="phone">Phone number</label>
+              <input required type="tel", id="phone", name="phone", pattern="[0,9]">
+            </div>
+
+            <div>
+              <label for="method">Contact method</label>
+              <input type="radio", name="method", value="email"> Email 
+              <input type="radio", name="method", value="phone"> Phone
+            </div>
+
+            <div>
+              <label for="available">Available day(s)</label>
+              <input type="checkbox", name="day", value="mon"> Monday
+              <input type="checkbox", name="day", value="tue"> Tuesday
+              <input type="checkbox", name="day", value="wed"> Wednesday
+              <input type="checkbox", name="day", value="thu"> Thursday
+              <input type="checkbox", name="day", value="fri"> Friday
+              <input type="checkbox", name="day", value="sat"> Saturday
+              <input type="checkbox", name="day", value="sun"> Sunday
+            </div>
+            
+            <div>
+              <label for="attachment">Attachment</label>
+              <input type="file", id="attachment", name="attachment">
+            </div>
+            
+            <div>
+              <div><label for="message">Message</label></div>
+              <textarea id="message" cols="80" rows="9"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+          </form>
+
+          <video controls autoplay name="media">
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+          </video>
+
     </body>
     
 </html>
