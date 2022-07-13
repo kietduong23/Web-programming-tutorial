@@ -1,0 +1,61 @@
+h1 {
+    color: hsl(250,95%,50%);
+    font-size: xxx-large;
+}
+
+h2 {
+    color: hsl(250,75%,50%);
+    font-size: xx-large;
+}
+
+h3 {
+    color: hsl(250,55%,50%);
+    font-size: x-large;
+}
+
+h4 {
+    color: hsl(250,35%,50%);
+    font-size: large;
+}
+
+nav ul li a{
+    color: orange;
+    font-size: 0.2in;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    color: lightblue;
+}
+
+
+nav ul li a:hover{
+    color: green;
+}
+
+/* Note: link does not inherit from parent */
+
+/* nav ul li:hover a {
+    background-color: chocolate;
+    color: yellow;
+} */
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.job-description p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#education tr:nth-child(2n) {
+    background-color: blueviolet;
+}
+
+#education tr:nth-child(2n + 1) {
+    background-color:greenyellow;
+}
+
+#education tr:first-child {
+    background-color:white;
+}
